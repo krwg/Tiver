@@ -1,0 +1,24 @@
+{
+  "name": "tiver",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "server": "node server/index.mjs",
+    "archive": "node scripts/build-archive.mjs",
+    "sync-archive": "node scripts/sync-archive-from-source.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@fontsource/press-start-2p": "^5.2.7",
+    "vite": "^6.3.5"
+  }
+}

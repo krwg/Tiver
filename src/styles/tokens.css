@@ -1,0 +1,71 @@
+:root {
+  color-scheme: dark;
+
+  --font-sans: 'Press Start 2P', ui-monospace, monospace;
+
+  /* Тёмный editorial-фон: спокойнее, без «неона»; ближе к apple.com / чистым B2B вроде itd.com */
+  --bg0: #050506;
+  --bg1: #0a0a0c;
+  --bg2: #111114;
+
+  --text: rgba(255, 255, 255, 0.93);
+  --text-secondary: rgba(255, 255, 255, 0.72);
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --text-faint: rgba(255, 255, 255, 0.28);
+
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-bg-strong: rgba(255, 255, 255, 0.085);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-border-soft: rgba(255, 255, 255, 0.07);
+  --glass-highlight: rgba(255, 255, 255, 0.16);
+  --glass-shine: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0) 45%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+
+  --blur-lg: 44px;
+  --blur-md: 24px;
+
+  --accent: #0a84ff;
+  --accent-hover: #409cff;
+  --accent-soft: rgba(10, 132, 255, 0.2);
+
+  /* Нижняя точка градиента фона (темы переопределяют в themes.css) */
+  --bg-gradient-end: #030304;
+
+  /* Пять «красок» для чипов, бейджей, акцентов */
+  --palette-1: #0a84ff;
+  --palette-2: #5ac8fa;
+  --palette-3: #30d158;
+  --palette-4: #ff9f0a;
+  --palette-5: #ff375f;
+
+  /* Острые блоки контента; «капсула» — только навбар и табы */
+  --radius-sm: 2px;
+  --radius-md: 2px;
+  --radius-lg: 2px;
+  --radius-pill: 980px;
+
+  --shadow-glass: 0 20px 70px rgba(0, 0, 0, 0.42), 0 0 0 1px rgba(255, 255, 255, 0.035) inset;
+  --shadow-float: 0 10px 36px rgba(0, 0, 0, 0.32);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  --gutter-x: clamp(1rem, 4vw, 1.5rem);
+  --gutter-y: clamp(1.5rem, 5vw, 2.5rem);
+
+  /* Дефолт под широкий экран (~18:9): контент не «колонка из мессенджера» */
+  --container: min(1280px, 100% - 2 * var(--gutter-x));
+  --container-guest-wide: min(1440px, 100% - 2 * var(--gutter-x));
+}

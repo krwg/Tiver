@@ -1,0 +1,111 @@
+/* Темы: тёмная — по умолчанию (:root в tokens). Остальные — data-theme на <html>. */
+
+html.tiver[data-theme='light'] {
+  color-scheme: light;
+  --bg0: #ececf3;
+  --bg1: #f5f5f8;
+  --bg2: #ffffff;
+  --bg-gradient-end: #dcdce8;
+  --text: rgba(20, 20, 28, 0.92);
+  --text-secondary: rgba(20, 20, 28, 0.68);
+  --text-muted: rgba(20, 20, 28, 0.48);
+  --text-faint: rgba(20, 20, 28, 0.28);
+  --glass-bg: rgba(0, 0, 0, 0.04);
+  --glass-bg-strong: rgba(0, 0, 0, 0.07);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --glass-border-soft: rgba(0, 0, 0, 0.06);
+  --glass-highlight: rgba(0, 0, 0, 0.12);
+  --accent: #0066cc;
+  --accent-hover: #0080ff;
+  --accent-soft: rgba(0, 102, 204, 0.18);
+  --palette-1: #0066cc;
+  --palette-2: #34aadc;
+  --palette-3: #2d9f4f;
+  --palette-4: #c87a00;
+  --palette-5: #c41e3a;
+}
+
+html.tiver[data-theme='light'] .guest-user-menu__trigger {
+  background: color-mix(in srgb, var(--bg2) 88%, transparent);
+  border-color: var(--glass-border);
+}
+
+html.tiver[data-theme='light'] .guest-nav__link:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+html.tiver[data-theme='moon'] {
+  color-scheme: dark;
+  --bg0: #0a0f18;
+  --bg1: #0f1624;
+  --bg2: #141f33;
+  --bg-gradient-end: #060a12;
+  --text: rgba(220, 235, 255, 0.94);
+  --text-secondary: rgba(200, 220, 255, 0.72);
+  --text-muted: rgba(160, 190, 230, 0.5);
+  --text-faint: rgba(120, 150, 200, 0.3);
+  --glass-bg: rgba(80, 140, 255, 0.06);
+  --glass-bg-strong: rgba(80, 140, 255, 0.1);
+  --glass-border: rgba(120, 180, 255, 0.14);
+  --glass-border-soft: rgba(100, 160, 255, 0.08);
+  --glass-highlight: rgba(160, 200, 255, 0.18);
+  --accent: #6eb5ff;
+  --accent-hover: #9dceff;
+  --accent-soft: rgba(110, 181, 255, 0.22);
+  --palette-1: #7eb6ff;
+  --palette-2: #5ad1e6;
+  --palette-3: #6ee7b7;
+  --palette-4: #fcd34d;
+  --palette-5: #f9a8d4;
+}
+
+html.tiver[data-theme='sakura'] {
+  color-scheme: dark;
+  --bg0: #1a0a12;
+  --bg1: #240f18;
+  --bg2: #2e1420;
+  --bg-gradient-end: #12060c;
+  --text: rgba(255, 240, 248, 0.95);
+  --text-secondary: rgba(255, 210, 232, 0.82);
+  --text-muted: rgba(255, 170, 210, 0.58);
+  --text-faint: rgba(255, 140, 195, 0.32);
+  --glass-bg: rgba(255, 105, 165, 0.1);
+  --glass-bg-strong: rgba(255, 105, 165, 0.15);
+  --glass-border: rgba(255, 150, 195, 0.22);
+  --glass-border-soft: rgba(255, 130, 185, 0.12);
+  --glass-highlight: rgba(255, 190, 215, 0.22);
+  --accent: #ff4d9a;
+  --accent-hover: #ff7ab8;
+  --accent-soft: rgba(255, 77, 154, 0.25);
+  --palette-1: #ff4d9a;
+  --palette-2: #ff8fb8;
+  --palette-3: #ffb3d9;
+  --palette-4: #ffc2e6;
+  --palette-5: #ffe0f0;
+}
+
+/* Секретная тема после подписки на «Производственный учёт» — жёлтая палитра в духе 1С */
+html.tiver[data-theme='onec'] {
+  color-scheme: dark;
+  --bg0: #141008;
+  --bg1: #1c160a;
+  --bg2: #25200c;
+  --bg-gradient-end: #0a0804;
+  --text: rgba(255, 248, 220, 0.95);
+  --text-secondary: rgba(255, 235, 180, 0.82);
+  --text-muted: rgba(230, 200, 120, 0.58);
+  --text-faint: rgba(200, 170, 90, 0.35);
+  --glass-bg: rgba(255, 213, 79, 0.08);
+  --glass-bg-strong: rgba(255, 213, 79, 0.12);
+  --glass-border: rgba(255, 193, 7, 0.28);
+  --glass-border-soft: rgba(255, 193, 7, 0.14);
+  --glass-highlight: rgba(255, 235, 150, 0.2);
+  --accent: #ffc107;
+  --accent-hover: #ffca28;
+  --accent-soft: rgba(255, 193, 7, 0.22);
+  --palette-1: #ffc107;
+  --palette-2: #ffeb3b;
+  --palette-3: #ff9800;
+  --palette-4: #fff8e1;
+  --palette-5: #795548;
+}

@@ -1,0 +1,34 @@
+/* Только кнопка «2026» — не трогаем вёрстку архива */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+.archive-return-2026 {
+  position: fixed;
+  z-index: 99999;
+  bottom: max(10px, env(safe-area-inset-bottom, 0px));
+  right: max(10px, env(safe-area-inset-right, 0px));
+  font-family: 'Press Start 2P', monospace;
+}
+.archive-return-2026__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.25rem;
+  min-height: 2.25rem;
+  padding: 0.35rem 0.5rem;
+  font-size: 8px;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #1a1a1a;
+  background: #c6c6c6;
+  border: 2px solid #1a1a1a;
+  box-shadow: inset 2px 2px 0 #fff, inset -2px -2px 0 #5a5a5a;
+}
+.archive-return-2026__btn:hover { filter: brightness(1.06); }
+.archive-return-2026__btn:active {
+  transform: translateY(1px);
+  box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #5a5a5a;
+}

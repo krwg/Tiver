@@ -1,0 +1,131 @@
+.page--marketing {
+  padding-left: max(var(--gutter-x), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--gutter-x), env(safe-area-inset-right, 0px));
+  padding-top: max(var(--gutter-y), env(safe-area-inset-top, 0px));
+  padding-bottom: max(var(--space-12), env(safe-area-inset-bottom, 0px));
+}
+
+.page--guest .guest-topbar {
+  padding-left: max(var(--space-6), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--space-6), env(safe-area-inset-right, 0px));
+}
+
+.page--guest .guest-main {
+  padding-left: max(var(--space-6), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--space-6), env(safe-area-inset-right, 0px));
+  padding-bottom: max(var(--space-12), env(safe-area-inset-bottom, 0px));
+}
+
+@media (max-width: 900px) {
+  :root {
+    --container: min(100%, 100% - 2 * var(--gutter-x));
+  }
+
+  .page--guest {
+    --container: 100%;
+  }
+
+  .guest-topbar {
+    border-radius: 0;
+    padding-top: max(var(--space-3), env(safe-area-inset-top, 0px));
+  }
+
+  .guest-nav__link {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .stack--lg {
+    gap: var(--space-8);
+  }
+
+  .card--pad-lg {
+    padding: var(--space-6);
+  }
+
+  .card--pad-md {
+    padding: var(--space-5);
+  }
+
+  .hero__title {
+    font-size: clamp(24px, 7vw, 32px);
+  }
+
+  .actions-row--stretch {
+    flex-direction: column;
+  }
+
+  .actions-row--stretch .btn {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .actions-row--start {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions-row--start .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .narrow-form {
+    max-width: none;
+  }
+
+  .welcome-era__skip {
+    position: static;
+    display: block;
+    width: 100%;
+    margin-bottom: var(--space-4);
+    text-align: center;
+  }
+
+  .legal__article {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .legal__body h3 {
+    margin-top: var(--space-6);
+  }
+}
+
+@media (max-width: 380px) {
+  .site-logo {
+    min-width: auto;
+    width: 100%;
+    max-width: 12rem;
+  }
+
+  .guest-nav__link {
+    padding-inline: 10px;
+    font-size: 12px;
+  }
+}
+
+/* Широкий экран: «остров» топбара гостя — спокойный каркас как у крупных маркетинговых сайтов */
+@media (min-width: 1060px) {
+  .guest-topbar {
+    max-width: var(--container-guest-wide);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: var(--space-3);
+    border-radius: 0;
+    border: 1px solid var(--glass-border-soft);
+  }
+
+  .page--guest .guest-main {
+    padding-top: var(--space-6);
+  }
+}
+
+/* Горизонтальный скролл табов с мягким затуханием по краям */
+@media (max-width: 720px) {
+  .guest-nav {
+    mask-image: linear-gradient(90deg, transparent, #000 12px, #000 calc(100% - 12px), transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 12px, #000 calc(100% - 12px), transparent);
+  }
+}
